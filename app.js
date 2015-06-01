@@ -1,0 +1,29 @@
+function isVow(x){
+  var a = x[0];
+  return a=='a' || a=='e' || a=='i' || a=='o' || a=='u';
+}
+
+document.getElementById("butt").addEventListener('click', function(){  
+  var a = ['George Bush', 'Osama Bin Laden', 'Obama', 'Nelson Mandela', 'Mia Khalifa', 'Mother Teressa', 'David Beckham', 'Eminem', 'Charlie Chaplin', 'Leonardo DiCaprio', 'Pardhanmantri Ji', 'Arvind Kejriwal', 'Aasaram Baapu', 'Lata Mangeshkar', 'Bill Clinton', 'Piyuz Ka3n', 'Baabu Maan', 'Chemistry Aale Master', 'Mark Zuckerburg', 'Daara Singh', 'Steve Jobs', 'Deepika Padukone', 'Rakhi Sawant', 'Angelina Jolie', 'Sunny Leone', 'Phullan Devi', 'Wolverine', 'Sapider Maan', 'Superman', 'Kiran Bedi', 'Bob Marley', 'Mahatma Gandhi', 'Daler Mehendi', 'Kaneda Aali Bua', 'Bill Clinton', 'Navjot Singh Siddhu', 'Baba Ramdev', 'Narander Chanchal', 'Bipasha Basu', 'Punjab Puls', 'Mallika Sherawat', 'Kim Kardashian', 'Michael Jackson', 'Ironman', 'Alia Bhatt', 'Mayweather', 'Tiger Woods', 'Binnu Dhillon', 'Jagjeet Singh', 'Sachin Tendulkar']
+  var b = ['365 Charitar Naar De Saara Saal Bnde Nu Maarde', 'Dhillon Ne Kaala Coat Ove Ni Paaya', 'Bacho Bas Bacho !! Jinna Bach Sakde Ho Bacho, Badda Kabba Sabav Ae Mera Bada Kabba Bott Zayada Hi Kabba Sabav Ae Mera', 'Saale 2 Jamme Dove Nikamme, Loki Kehnde Kismat Maadi, Kismat Da Ki Dossh Chabal Tan Aap Maari Aa', 'Jhotte Khade Ton Te Chache Chadde Ton Jinni EK Door Raho Sehet Lai Onna Hi Changa', 'Hun Chiddi Vichari Ki Kre Thanda Paani Pee Mare', 'Oyee Chotu !! Punjab Puls Dande Vi Mardi Ae Oye !!', 'Bai Kaka Zindagi Ch Jhaadu Kade Khada Na Rahin, Te Kiraydaar Kade Chada Na Rakhi', 'Zameen Banjar Te Aullad Kanjar Rab Kissi Nu Na Dave', 'Jina Di Khothi Daane, Ona De Kamle Vi Sayane', 'Je Chandighar Thae Ju, Pinda Warga Ta Rehju', 'Sadda Kutta Kutta Twada Kutta Tommy', 'Roti Ghar-ali De Hath Di Khaiye Ji Phave Boot Palisha Kriye', 'Tennu Swa Pta Ijjat Bezti Da, Thode Koi 3 Chapad Khat Marde Onu Tussi Ijjazt Smajh Lende Oh', 'Thode Vargi Gandia Zilsa Nu Koi Katti Da Sangal Na Dave, Kudi Kinne Deni ?', 'Eh Tan Suneya C Bai Khushi Ch Bnde De Pair Thalle Ni Lagde,Te Dukh Ch Utte V Chakke Jande Ne Aj Pehli Vaari Vekheya', 'Saala Bnda Na Jannana Valayti Karkhana', 'Angrezan Ne Ek Chez Badi Sohni Chalai Ae "EXTRA MARITAL AFFAIR" !', 'Saleya Enne VULGAR Kapde Paa Ke Koi Bhen De Kole Ni Langda, Tu Bhen Nu Milan Aa Gya', 'Jatta De Sagan Velle Ya Taan Ring Paindi Je Ya Raffad', 'Ni Tu Mar Gya Khake Challi Tennu Rove Chacha Balli', 'Saure Ghar Jawai, Te Bhen Ghar Bhai Kutta Hunda', 'Tu Saleya Bhen Tan Ki, Bhen Di Gaal Vi Ni Deserve Krda Tennu Khul Ke Aa Vi Ni Keh Skde TERI BHEN NU', 'Pasand Da Ki Hai ? Kari Jau ! Baaki Pasand Taan Mai V Katrina Nu Bot Krda, Eda Matlab Eh Thori Oh Mere Ghare Aa Ju, Te Je Aagli Auna v Chahu Ranbeer Ne Aaun Deni ?', 'Lamgdi Ghaudi Nu Kaun Chole Chad Da', 'Mele Ch Khoye Jawak Tan Mil Jande Hunde Ne Pr Apni Marzi Nal Mauj-Mela Karan Gye Khat Hi Labde Hunde Ne', 'Ethe DCP Salute Menu Marda Pairan CH Thandedar Rolda', 'Aaj Kal Katal Krne Sokhe Te Munde Vyahne Okhe', 'Jatt Di Psnd Jatt Hi Vyauga Hor Saala Bhaiay Lae ke Jauga', 'Phajde Jande Gaalan Na Kaddo Smjh Ni Aundia, Kalli Kalli Gaal Khad Ke Kaddo Swaad Tan Aave', 'Hun Vadde Supne Vekhan Vaste Zayada Time Tak Sauna Painda', 'Lanat Aa Oh 7 Peedia Di Mehnat Te, Jedia Mehnat Krke Enna Ek V Ni Kama Saki Ki Athvi Peedi Tan Aaram Naal So Saake', 'Saare Ugli Phad Ke Hi Turna Sikhande Ne, Koi Gardan Phad Ke Vi Turna Sikhanda', 'Tere Warge Buddhu Yaar Naalo Sayana Dushman Changa', '"Mummy Kehndi Si ?" Saleyo Kade Peyo Di Na Suneyo', 'Kothi Mistri Hi Paunde Hunde Aan Hor Sunyare Paunde Hunde Aan', 'Mennu Kine Kudi Deni Taan Ae Puchde , Ki Gaal Mere Phephdeya Ch Resha Jammeya ? Gall Krde Muh Cho Balgam Digdi ? Keede Paye Meenu ?', 'Saleya Aa Muh Ch Jeeb Churan Chattan Nu Rakhi Aa ? Phaide Phaide Action Kri Janda Muho Ni Phut Skda', 'Shaabashe ! Tussi Ghatia Galla Kamm Skde Oh, Assi Ghatia Gallan Bhi Na Kariye', 'Aave Saade Naal Jaave Kissi Hor Naal Balle Oye Challak Sajjan', 'Loki Dhihadia Kolo V Kamm Kra Ke Rotti Kawa Ke Bhajde Ne,Tu Yaara Nu Hi Bhukha Toran Deya Ae', 'Na Mennu Meeh Aaya Si Jeda Dhoope Sukhan Paa Ta Si', 'Saale Aawien Line Bnaiye Khade Jiven Bijli Da Bill Bharan Aye Hunde Aa', '44 Saala Da Ho Gya Aaje Tak Chada, Sharam Naal Tan Mareya Ni Tu Current Naal Maar Dena Si', 'Bua Phano Tur Gai Jahano, Bhatejeya Da Saath Chad Gi', 'Saleya Jinna Tu Mennu Dukhi Kitta, Mai Pind Jaake Kalla Kalla Jugnu Maardu', 'Saala Passport Aa Ki Lassi Da Dollu Jeda Kissi Nu De Gya Hona', 'Mai Pind Naanke Rahnda Si Oh Bua Kole Pad Di Si', 'Saale Ae Phajde Jiven World War Laggi Hoyi', 'Saada Assul Hai Aasi Hume Litta je , Ditta Koi Ni']
+/*   var c = ['Bandekhaniye', 'Thappad Maaru Saale De', 'Saala Kaddu Da', 'Kalaineya', 'Saala Baideya Da', 'Bhootni Da', 'Wadda Soorma', 'Fukra', 'Bondu', 'Lun Laini Deya', 'Begairata', 'Haram Deya', 'Fuddu', 'Fuddi Da', 'Maayeove', 'Laantiye', 'Chabal', 'Penchow', 'Kudiove', 'Bundmare Deyo', 'Wadda Sharabi Saala', 'Pendu Kanjar', 'Lagda Chache Da', 'Lagda Maa Da', 'Bhen Da Yaar', 'Bhen Da Shola Teri', 'Chutiya Jeha', 'Chitta Bander ', 'Kalla Bandar', 'Saala Tatta', 'Khota', 'Khote Da Putt', 'Vella Kanjar', 'Kaala Kanjar', 'Bondu Kanjar', 'Fuddaad Deya', 'Lun', 'Saala Topa', 'Topa Jeha', 'Lun Da Topa', 'Kutte Da', 'Saala Ghasti Da', 'Ghasti Da Jammeya', 'Ullu Da Pathha', 'Soor', 'Soor Deya', 'Wadda Mirza', 'Kalaina', 'Soor Da Baccha', 'Kudichod'] */
+  var rand;
+  rand = Math.floor((Math.random() * 49) + 0);
+  var res = "Saach Keha Si "
+  console.log(rand)
+/*   if( isVow(a[rand])){
+    res+="an "
+  }else{
+    res+="a "
+  } */
+  res+=a[rand]+" "+"Ne,"+" "
+  
+  rand = Math.floor((Math.random() * 49) + 0);
+  console.log(rand)
+  res+=b[rand]+" "
+  /* rand = Math.floor((Math.random() * 49) + 0);
+  console.log(rand)
+  res+=c[rand]+" " */
+  console.log(res)
+  document.getElementById("dest").innerHTML = res;
+});
